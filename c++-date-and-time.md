@@ -85,7 +85,7 @@ c++ 标准库没有提供一个合适的日期类型。c++ 从 C 中继承了针
        cout << "The UTC date and time is:"<< dt << endl;
     }
 
-编译和执行上面的代码，产生以下结果：
+编译和执行上面的代码，执行结果如下：
 
     The local date and time is: Sat Jan  8 20:07:41 2011
     
@@ -119,7 +119,7 @@ c++ 标准库没有提供一个合适的日期类型。c++ 从 C 中继承了针
        cout << 1 + ltm->tm_min << ":";
        cout << 1 + ltm->tm_sec << endl;
     }
-编译和执行上面的代码，产生以下结果：
+编译和执行上面的代码，执行结果如下：
 
     Number of sec since January 1, 1970:1294548238
     Year: 2011
