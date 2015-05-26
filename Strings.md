@@ -47,7 +47,7 @@ C++ 支持广泛的函数来操作以空字符终止的字符串：
 <table border="1">
 <tr>
 <th>自然数</th>
-<th>函数和目的</th>
+<th>函数和功能</th>
 </tr>
 <tr>
 <td>1</td>
@@ -56,18 +56,18 @@ C++ 支持广泛的函数来操作以空字符终止的字符串：
 </tr>
 <tr>
 <td>2</td>
-<td><strong>strcat(s1,s2);</strong>  
-将字符串 s2 串联到字符串 s1 的结尾。</td>
+<td><strong>strcat(s1,s2);</strong>   
+ 将字符串 s2 串联到字符串 s1 的结尾。</td>
 </tr>
 <tr>
 <td>3</td>
 <td><strong>strlen(s1);</strong>  
-返回字符串 s1 的长度</td>
+ 返回字符串 s1 的长度。</td>
 </tr>
 <tr>
 <td>4</td>
 <td><strong>strcmp(s1,s2);</strong>  
-如果 s1 和 s2 相同，返回 0；如果 s1<s2，返回小于 0 的数；如果 s1>s2，返回大于 0 的数。</td>
+ 如果 s1 和 s2 相同，返回 0；如果 s1≥s2，返回大于 0 的数；如果 s1<s2，返回小于 0 的数。</td>
 </tr>
 <tr>
 <td>5</td>
