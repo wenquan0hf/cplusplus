@@ -1,10 +1,9 @@
 - C++ Basics 
   - [Overview](overview.md)
   - [Environment Setup](environment.md)
-  - [工作流程](workflow.md)
   - [基本语法](basic-syntax.md)
   - [Comments](comments.md)
-  - [日期类型](datet-type.md)
+  - [数据类型](datet-type.md)
   - [Variable Types](variable-types.md)
   - [Variable Scope](variable-scope.md)
   - [Constants/Literals](constants-literals.md)
