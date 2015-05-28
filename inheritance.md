@@ -12,9 +12,9 @@
 
     class derived-class: access-specifier base-class
 
-在这里access-specifier是**public**、**protected** 或者 **private**，base-class是之前定义的类的名称。如果不使用access-specifier，那么在默认情况下它是私有的。
+在这里 access-specifier 是 **public** 、 **protected** 或者 **private** ，base-class 是之前定义的类的名称。如果不使用 access-specifier ，那么在默认情况下它是私有的。
 
-考虑一个基类的**shape**和其派生类**Rectangle**的继承情况如下：
+考虑一个基类的 **shape** 和其派生类 **Rectangle** 的继承情况如下：
 
     #include <iostream>
      
@@ -60,11 +60,11 @@
        return 0;
     }
 
-上面的代码编译和执行时,它产生以下结果：
+上面的代码编译和执行时，它产生以下结果：
 
     Total area: 35
 
-###访问控制和继承:
+###访问控制和继承：
 
 一个派生类可以访问所有它的基类的非公有类型的成员。因此不希望被派生类的成员函数访问的基类成员应该在基类中声明为私有类型。
 
@@ -106,18 +106,18 @@
 
 ###继承方式：
 
-当从一个基类派生一个子类的时候,公共基类可以通过**public**，**protected**，或者 **private**方式被继承。继承方式被access-specifier指定，正如上面解释的。
+当从一个基类派生一个子类的时候,公共基类可以通过 **public** ，**protected** ，或者 **private** 方式被继承。继承方式被 access-specifier 指定，正如上面解释的。
 
 我们几乎不使用**protected**或私有**private** 继承，但**public**继承是常用的。在使用不同类型的继承的时候,应用规则如下：
 
-- **public**继承：当从一个公有基类派生一个类的时候，基类的公有成员成为派生类的公有成员；基类的保护成员成为派生类的保护成员。一个基类的私有成员不能被派生类直接访问，但可以通过调用基类的公有和保护成员访问基类的私有成员。
+-  **public** 继承：当从一个公有基类派生一个类的时候，基类的公有成员成为派生类的公有成员；基类的保护成员成为派生类的保护成员。一个基类的私有成员不能被派生类直接访问，但可以通过调用基类的公有和保护成员访问基类的私有成员。
 
 
-- **protected**继承：当从一个受保护的基类派生子类的时候,基类的公有和保护成员成为派生类的保护成员。
+-  **protected** 继承：当从一个受保护的基类派生子类的时候,基类的公有和保护成员成为派生类的保护成员。
 
 
 
-- **private** 继承：当从一个私有的基类派生子类的时候,基类的公有和保护成员成为派生类的私有成员。
+-  **private**  继承：当从一个私有的基类派生子类的时候,基类的公有和保护成员成为派生类的私有成员。
 
 ###多继承：
 
@@ -125,7 +125,7 @@
 
     class derived-class: access baseA, access baseB....
 
-在这里access是**public**，**protected**，或者是 **private** ，并且每一个基类将有一个access类型，他们将由逗号分隔开，如上所示。让我们试试下面的例子：
+在这里 access 是 **public** ，**protected** ，或者是 **private** ，并且每一个基类将有一个access类型，他们将由逗号分隔开，如上所示。让我们试试下面的例子：
 
     #include <iostream>
     using namespace std;
@@ -186,7 +186,7 @@
        return 0;
     }
 
-上面的代码编译和执行时,它产生以下结果：
+上面的代码编译和执行时，它产生以下结果：
 
     Total area: 35
     Total paint cost: $2450
