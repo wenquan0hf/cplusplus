@@ -16,7 +16,7 @@
 下面的就是C++语言所支持的数学运算操作符：
 假设变量A存储10，变量B存储20，那么：
 
-[Show Examples](http://www.tutorialspoint.com/cplusplus/cpp_arithmatic_operators.htm)
+[显示例子](http://www.tutorialspoint.com/cplusplus/cpp_arithmatic_operators.htm)
 
 <table>
 <tbody>
@@ -65,7 +65,7 @@
 下面的就是C++语言所支持的关系运算操作符：
 假设变量A存储10，变量B存储20，那么：
 
-[Show Examples](http://www.tutorialspoint.com/cplusplus/cpp_relational_operators.htm)
+[显示例子](http://www.tutorialspoint.com/cplusplus/cpp_relational_operators.htm)
 
 <table>
 <tbody>
@@ -105,7 +105,7 @@
 下面的就是C++语言所支持的逻辑运算操作符：
 假设变量A存储1，变量B存储0，那么：
 
-[Show Examples](http://www.tutorialspoint.com/cplusplus/cpp_logical_operators.htm)
+[显示例子](http://www.tutorialspoint.com/cplusplus/cpp_logical_operators.htm)
 
 <table>
 <tbody>
@@ -132,7 +132,7 @@
 
 ## 位运算符 ##
 
-位操作运算是按位来进行操作的。与、或、非和异火的真值表如下：
+位操作运算是按位来进行操作的。与、或、非和异或的真值表如下：
 
 
 <table>
@@ -363,7 +363,7 @@ A^B = 0011 0001
 
 运算符优先级确定表达式中项的分组。这会影响如何表达一个表达式。某些操作符比其他有更高的优先级,例如,乘法运算符的优先级高于加法操作符。  
 
-比如 x=7+3*2，这里x的值是13而不是20，因为乘法优先级比加法高。所以应该先执行3*2，然后再加7.
+比如 x=7+3*2，这里x的值是13而不是20，因为乘法优先级比加法高。所以应该先执行3乘2，然后再加7.
 
 操作符的优先级如下表，上方的优先级比下方高。较高优先级的操作符优先进行计算。
 
