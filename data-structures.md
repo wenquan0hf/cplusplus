@@ -1,4 +1,4 @@
-## C++ 结构
+# 结构体
 
 C/C++ 可以将相同类型的数据组合成一个数组并将该数组定义为一个变量，但结构（**structure**）是一种用户定义的数据类型，允许你将不同类型的数据项放在一起。   
 
@@ -9,10 +9,11 @@ C/C++ 可以将相同类型的数据组合成一个数组并将该数组定义�
 - Subject
 - Book ID 
 
-### 定义一个结构体
+## 定义一个结构体
 
 定义一个结构，您必须使用结构体声明。结构语句为您的程序定义了一个新的数据类型，拥有一个以上的成员。结构体声明的格式是这样的:
 
+```
     struct [structure tag]
     {
        member definition;
@@ -20,9 +21,11 @@ C/C++ 可以将相同类型的数据组合成一个数组并将该数组定义�
        ...
        member definition;
     } [one or more structure variables];  
+```
 
 **structure tag** 是可选的，每个成员的定义都是一个正常的变量定义，如 int i；或者 float f；或者任何其他有效的变量定义。在结构的定义结束时，在结构体定义结尾处的（“；”）符号之前可以指定一个或多个结构变量，但它是可选的。这是声明书结构体的方式:
 
+```
     struct Books
     {
        char  title[50];
@@ -30,11 +33,13 @@ C/C++ 可以将相同类型的数据组合成一个数组并将该数组定义�
        char  subject[100];
        int   book_id;
     }book;  
+```
 
-### 访问结构成员:
+## 访问结构成员
 
 访问一个结构的任何成员，我们使用 **member access operator**（成员访问操作符）：**(.)** 来访问结构体成员。成员访问操作符编码为结构变量名和我们要访问结构成员之间的一个点符号。使用关键字 **struct** 来定义结构类型的变量。下面是例子解释怎样使用结构体：
 
+```
     #include <iostream>
     #include <cstring>
      
@@ -79,9 +84,11 @@ C/C++ 可以将相同类型的数据组合成一个数组并将该数组定义�
     
        return 0;
     }
+```
 
 编译和执行上面的代码，执行结果如下：
 
+```
     Book 1 title : Learn C++ Programming
     Book 1 author : Chand Miyan
     Book 1 subject : C++ Programming
@@ -90,11 +97,13 @@ C/C++ 可以将相同类型的数据组合成一个数组并将该数组定义�
     Book 2 author : Yakit Singha
     Book 2 subject : Telecom
     Book 2 id : 6495700
+```
 
-### 结构作为函数参数:
+## 结构作为函数参数
 
 你可以将结构作为函数参数传递，其使用方式和将其他任何变量或指针作为参数传递非常相似。你可以以同样的方式访问结构变量，就如在上面的例子中显示的一样：
 
+```
     #include <iostream>
     #include <cstring>
      
@@ -141,9 +150,11 @@ C/C++ 可以将相同类型的数据组合成一个数组并将该数组定义�
        cout << "Book subject : " << book.subject <<endl;
        cout << "Book id : " << book.book_id <<endl;
     }
+```
 
 编译和执行上面的代码，执行结果如下：
 
+```
     Book title : Learn C++ Programming
     Book author : Chand Miyan
     Book subject : C++ Programming
@@ -152,23 +163,31 @@ C/C++ 可以将相同类型的数据组合成一个数组并将该数组定义�
     Book author : Yakit Singha
     Book subject : Telecom
     Book id : 6495700
+```
 
-### 结构体指针:
+## 结构体指针
 
 您可以定义结构体指针，以一种定义指向其他变量的指针非常相似的方式，如下所示：
 
+```
 	struct Books *struct_pointer;
+```
 
 现在，您可以用上面定义的指针变量存储一个结构变量的地址。找到一个结构变量的地址，把操作符 & 置于结构体名称的前面，如下所示：
 
+```
 	struct_pointer = &Book1;
+```
 
 为了通过一个指向结构的指针访问结构体成员，必须使用 -> 操作符，如下所示：
 
+```
 	struct_pointer->title;
+```
 
 让我们使用结构指针重写上面的例子，希望这将帮助你更容易理解这个概念：
 
+```
     #include <iostream>
     #include <cstring>
      
@@ -216,9 +235,11 @@ C/C++ 可以将相同类型的数据组合成一个数组并将该数组定义�
        cout << "Book subject : " << book->subject <<endl;
        cout << "Book id : " << book->book_id <<endl;
     }
+```
 
 编译和执行上面的代码，执行结果如下：
-    
+
+```    
     Book title : Learn C++ Programming
     Book author : Chand Miyan
     Book subject : C++ Programming
@@ -227,11 +248,13 @@ C/C++ 可以将相同类型的数据组合成一个数组并将该数组定义�
     Book author : Yakit Singha
     Book subject : Telecom
     Book id : 6495700
+```
 
-### typedef关键字
+## typedef 关键字
 
 有一个更简单的方法来定义结构体，你可以给你创建的类型起一个别名，例如：
 
+```
     typedef struct
     {
        char  title[50];
@@ -239,15 +262,20 @@ C/C++ 可以将相同类型的数据组合成一个数组并将该数组定义�
        char  subject[100];
        int   book_id;
     }Books;
+```
 
-现在，可以直接使用 Books 来定义书籍类型的变量，而不使用struct 关键字。下面是示例：
+现在，可以直接使用 Books 来定义书籍类型的变量，而不使用 struct 关键字。下面是示例：
 
+```
 	Books Book1, Book2;
+```
 
 你也可以在非结构体（non-structs）中使用 typedef 关键字，如下所示：
 
+```
     typedef long int *pint32;
      
     pint32 x, y, z;
+```
 
-x,y,z是指向长整数类型的指针。
+x,y,z 是指向长整数类型的指针。
