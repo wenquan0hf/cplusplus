@@ -1,4 +1,4 @@
-# C++ 模板 #
+# 模板 
 
 模板是泛型编程的基础。泛型编程就是以独立于任何特定类型的方式编写代码。
 
@@ -9,19 +9,22 @@
 
 你也可以使用模板定义函数和类，让我们看看是怎么做的：
 
-## 函数模板： ##
+## 函数模板 
 
 模板函数定义的一般形式如下所示：
 
+```
     template <class type> ret-type func-name(parameter list)
     {
        // body of function
     }
+```
 
 这里的 **type** 是函数使用的数据类型的占位符名称。 这个名称可以在函数定义内使用。
 
 下面是一个返回两个值中的最大值的函数模板例子：
 
+```
     #include <iostream>
     #include <string>
     
@@ -49,32 +52,36 @@
     
        return 0;
     }
-
+```
 
 如果我们编译并运行上述代码，将会产生以下结果：
-    
+
+```   
     Max(i, j): 39
     Max(f1, f2): 20.7
     Max(s1, s2): World
+```
 
-## 类模板： ##
+## 类模板 
 
 就像我们可以定义函数模板一样，我们也可以定义类模板。
 
 模板类定义的一般形式如下所示：
-    
+ 
+```   
     template <class type> class class-name {
     .
     .
     .
     }
-
+```
 
 这里的 **type** 是一个类型的占位符名称，当类实例化的时候，此类型会被指定。
 你可以用一个逗号隔开的列表定义多个泛型数据类型。
 
 以下是一个定义 Stack<> 类并实现泛型方法来压入和弹出堆栈元素的例子：
 
+```
     #include <iostream>
     #include <vector>
     #include <cstdlib>
@@ -145,9 +152,12 @@
     return -1;
     } 
     }
+```
 
 如果我们编译并运行上述代码，将会产生以下结果：
 
+```
     7
     hello
     Exception: Stack<>::pop(): empty stack
+```
